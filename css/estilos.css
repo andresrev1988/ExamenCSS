@@ -26,7 +26,7 @@ header{
 	border-radius: 10px 10px 0 0;
   font-family: "Dancing Script";
   animation-name: slidein;
-  animation-duration: 2s;
+  animation-duration: 3s;
   text-align: center;
 }
 
@@ -45,6 +45,9 @@ header li a {
 /*CUERPO*/
 body{
   background-color: #02010a;
+	font-family: "Dancing Script";
+	color: withe;
+	text-align: center;
 }
 img{
 	box-shadow: 2px 2px 2px #02010a;
@@ -72,6 +75,31 @@ img{
 	padding: 1%;
 	border: 1px;
 }
+/*PIE DE PAGINA*/
+footer{
+  background-color: #C6d5c5;
+	border-radius: 0 0 10px 10px;
+  font-family: "Dancing Script";
+  text-align:justify;
+}
+.pie{
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+}
+#p1{
+	width: 25%;
+}
+#p2{
+	width: 25%;
+}
+#p3{
+	width: 25%;
+}
+#p4{
+	width: 25%;
+}
+
 /*ANIMACIONES HOVER*/
 
 #c2 img{
@@ -92,7 +120,7 @@ img{
 	box-shadow: 2px 2px 2px #82c3a6;
 	border: 2px ;
 }
-
+/*MEDIA QUERIES*/
 @media (max-width: 900px) {
   .titulo{
 		width: 100%;
@@ -105,8 +133,14 @@ img{
 	.secundarias{
 		flex-direction: column;
 	}
-}
+	.pie{
+		flex-direction: column;
+	}
+	#p1,#p2,#p3,#p4{
+		width: 100%;
+	}
 
+}
 @media (min-width: 900px) {
 	.titulo{
 		padding: 5px;
@@ -116,7 +150,7 @@ img{
 		transform: translateY(250%);
   }
 }
-
+/*KEYFRAMES*/
 @keyframes slidein{
 	0% {
 		margin-top: 150%;

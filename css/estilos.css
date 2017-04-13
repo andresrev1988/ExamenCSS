@@ -13,7 +13,6 @@
 	float:left;
   text-shadow: 2px 2px 2px #02010a;
   color: white;
-	padding: 0px;
   width: 100;
 }
 .navbar{
@@ -42,17 +41,76 @@ header li a {
   text-decoration:underline;
   padding: 5px;
 }
+
+/*CUERPO*/
+body{
+  background-color: #02010a;
+}
+img{
+	box-shadow: 2px 2px 2px #02010a;
+	display: block;
+	margin: auto;
+	width: 80%;
+}
+
+.central{
+	background-color: #82c3a6;
+}
+.secundarias{
+	background-color: #d5c75f;
+	display: flex;
+	flex-direction: row;
+}
+#c1{
+	padding: 1%;
+}
+#c2{
+	padding: 1%;
+	border: 1px;
+}
+#c3{
+	padding: 1%;
+	border: 1px;
+}
+/*ANIMACIONES HOVER*/
+
+#c2 img{
+  transform: rotate(0deg);
+	transition: transform 1s;
+}
+#c2 img:hover{
+	transform: rotate(10deg);
+	box-shadow: 2px 2px 2px #82c3a6;
+	border: 2px ;
+}
+#c3 img{
+  transform: translate();
+	transition: transform 1s;
+}
+#c3 img:hover{
+	transform: translate(5px,-20px);
+	box-shadow: 2px 2px 2px #82c3a6;
+	border: 2px ;
+}
+
 @media (max-width: 900px) {
   .titulo{
 		width: 100%;
+		padding: 0px;
   }
   .navbar{
 		float: left;
 		transform: translateY(-50%);
   }
+	.secundarias{
+		flex-direction: column;
+	}
 }
 
 @media (min-width: 900px) {
+	.titulo{
+		padding: 5px;
+	}
   .navbar{
 		float: right;
 		transform: translateY(250%);
@@ -70,12 +128,4 @@ header li a {
 		position: relative;
 		margin-top: 0%;
 	}
-}
-/*CUERPO*/
-body{
-  background-color: #02010a;
-}
-.c1 {
-  width: 100%;
-	background-color: #82c3a6;
 }
